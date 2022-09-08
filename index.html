@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>HAL幼稚園 | Topページ</title>
 </head>
 <body>
   <header>
-    <h1>HAL幼稚園へようこそ</h1>
+    <h1 class="visuallyhidden">HAL幼稚園へようこそ</h1>
+    <img src="./images/HAL_logo_row.png">
     <nav>
       <ul>
         <li><a href="">HAL幼稚園について</a></li>
@@ -18,59 +21,91 @@
       </ul>
     </nav>
     <a href="">資料請求はこちらから</a>
+    <!-- <div class="fade-topimg">
+      <img src="./images/12.jpg">
+      <img src="./images/14.jpg">
+    </div> -->
   </header>
+    <div class="fade_topimg">
+      <img src="./images/12.jpg">
+      <!-- <img src="./images/14.jpg"> -->
+    </div>
   <main>
-    <article>
-      <h2>HAL幼稚園について</h2>
+    <article id="about">
+      <h2 class="visuallyhidden">HAL幼稚園について</h2>
       <dl>
-        <div>
-          <dt><h3>お子様のすばらしい能力を花咲かせます。</h3></dt>
-          <dd>大切なお子様お一人おひとりの個性を輝かせます。
+        <div class="container">
+          <dt><h3>お子様の素晴らしい能力を花咲かせます。</h3></dt>
+          <dd><p>大切なお子様お一人おひとりの個性を輝かせます。<br>
             どろんこ遊びやお絵かきなどののびのび保育から、英語・体操・プール・音楽やパソコン・知能教育まで、
             3歳児から全員の方に保育園の中ですべて体験していただき、社会性を身につけ、心を育てることなど、すべてにバランスの取れた教育を行います。
-          </dd>
+          </p></dd>
+          <img src="./images/20.jpg">
         </div>
-        <div>
-          <dt><h3>大切な早期教育、運動と合わせて脳の発達を向上させます。</h3></dt>
-          <dd>更にご希望の方には、課外保育や特設保育といった中で、お茶・お花・剣道・鼓笛隊・ソロバン等色々な活動を選んでいただけます。
-            品格ある態度の育成を目指し、自分の個性に自信を持ち、しっかりと自分の意見を持ち、思いやりの心で人に接することのできるよう指導してまいります。
+        <div class="container">
+          <dt><h3>大切な早期教育。<br>運動と合わせて脳の発達を向上させます。</h3></dt>
+          <dd><p>更にご希望の方には、課外保育や特設保育といった中で、お茶・お花・剣道・鼓笛隊・ソロバン等色々な活動を選んでいただけます。
+            品格ある態度の育成を目指し、自分の個性に自信を持ち、しっかりと自分の意見を持ち、思いやりの心で人に接することのできるよう指導してまいります。</p>
           </dd>
+          <img src="./images/22.jpg">
         </div>
       </dl>
     </article>
-    <article>
-      <h2>トピックス</h2>
+    <article id="topix">
+      <h2>最新のトピックス</h2>
       <ul>
-        <li><a href="">2015-07-07 入園説明会~八尾プリズムホール~</a></li>
-        <li><a href="">2015-07-01 親子との教室参加者募集</a></li>
-        <li><a href="">2015-06-25 親と子の絵画教室 参加者募集</a></li>
-        <li><a href="">2015-06-05 幼年消防クラブ 発会式</a></li>
+        <li><a href=""><img src="/images/01.jpg"><p>入園説明会<br>~八尾プリズムホール~</p><span>2022年8月22日</span></a></li>
+        <li><a href=""><img src="/images/01.jpg"><p>親子との教室参加者募集です！</p></a></li>
+        <li><a href=""><img src="/images/01.jpg"><p>親と子の絵画教室<br>参加者募集です！</p></a></li>
+        <li><a href=""><img src="/images/01.jpg"><p>幼年消防クラブ発会式を開催しました。</p></a></li>
       </ul>
     </article>
-    <article>
-      <h2>新園舎ニュース</h2>
-      <dt><h3>子どもたちにも大人気☆待望の新園舎が完成しました!</h3></dt>
-      <dd>新園舎は広くてすてき!!子供達も毎日、きれいな設備で快適に過ごしています。
-        中庭からの明るい陽射し、子供達はちょっとした時間にも、中庭の遊具で上靴のまま遊べるので楽しそうです。
+    <article id="new_news">
+      <h2 class="visuallyhidden">新園舎ニュース</h2>
+      <dt><h3>子どもたちに大人気!<br>待望の新園舎が<br>完成しました。</h3></dt>
+      <!-- <div class="new_news_img"></div> -->
+      <img src="/images/shinensya.jpg" alt="新園舎の画像">
+      <dd><span>新園舎は広くて素敵！</span>
+        子供達も毎日、きれいな設備で快適に過ごしています。<br>
+        中庭からの明るい陽射し、子供達はちょっとした時間にも、中庭の遊具で上靴のまま遊べるので楽しそうです。<br>
         また参観や音楽会、おゆうぎ会、展覧会など、幼稚園での行事は人数制限一切なしで行えるようになりました。
-        子供達の生き生きと楽しんでいる様子をたくさんの方にご覧いただきたいと思います!!
-      </dd> 
+        子供達の生き生きと楽しんでいる様子をたくさんの方にご覧いただけます。
+      </dd>
+      <a>新園舎のご案内</a>
     </article>
-    <article>
-      <h2>SI遊び</h2>
-      <dt><h3>ハル幼稚園といえば、『SIあそび』</h3></dt>
-      <dd>お子様一人ひとりが、自ら考え、気づき、創意工夫する力、思考する力を養うこと(知能教育)を目的として、別教材を使用しています。
-        お話をよく聞き、集中してお勉強というのがハル幼稚園の最大の特徴です。しからないでほめて、みんなニコニコ。
+    <article id="si">
+      <h2 class="visuallyhidden">SI遊び</h2>
+      <dt><h3>ハル幼稚園といえば...<br>『SIあそび』</h3></dt>
+      <!-- <div class="si_img"></div> -->
+      <img src="/images/18.jpg" alt="SI遊びをしている子どもたち">
+      <dd>お子様一人ひとりが、自ら考え、気づき、創意工夫する力、思考する力を養うこと(知能教育)を目的として、別教材を使用しています。<br>
+        お話をよく聞き、集中してお勉強というのがハル幼稚園の最大の特徴です。しからないでほめて、みんなニコニコ。<br>
         『叱らない教育方法』は、20年以上の研究の成果です。「どろんこ遊び」から「英才教育」までがハル幼稚園の教育方針です。
       </dd>
+      <a>SI遊びとは</a>
     </article>
-    <article>
-      <h2>特別講師による指導</h2>
-      <dt><h3>3歳から特別講師による指導</h3></dt>
-      <dd>
+    <article id="special_sub">
+      <h2 class="visuallyhidden">特別講師による指導</h2>
+      <dt><h3>3歳からの<br>特別講師による指導</h3></dt>
+      <!-- <img src="/images/18.jpg" alt="SI遊びをしている子どもたち"> -->
+      <img src="/images/21.jpg" alt="">
+      <dd><span>あなたのお子様に合った指導を行います。</span>
+        ※普通保育の中で行いますので、保育料は別途徴収はいたしません。
+        <div class="special_sub_card">
+          <h4>授業一覧</h4>
+          <ul>
+            <li><img src="/images/18.jpg"><p>絵画造形教育</p></li>
+            <li><img src="/images/22.jpg"><p>英語教育</p></li>
+            <li><img src="/images/01.jpg"><p>プール指導</p></li>
+            <li><img src="/images/10.jpg"><p>体操</p></li>
+            <li><img src="/images/09.jpg"><p>声楽指導</p></li>
+            <li><img src="/images/01.jpg"><p>中国語<br>（年長5歳のみ）</p></li>
+            <li><img src="/images/06.jpg"><p>パソコンを使ってのローマ字指導<br>（年長5歳のみ）</p></li>
+          </ul>
+        </div>
       </dd>
     </article>
-    <article>
+    <article id="pamphlet">
       <h2>パンフレットご希望の方へ</h2>
       <dt><h3>パンフレットご希望の方は郵送させていただきます！</h3></dt>
       <dd> [お電話にてご請求の方] TEL:03-3344-1010 (〒160-0023 東京都新宿区西新宿1-7-3)
@@ -103,3 +138,5 @@
   </footer>
 </body>
 </html>
+<script src="./js/jquery-3.6.1.min.js"></script>
+<script src="./js/index.js"></script>

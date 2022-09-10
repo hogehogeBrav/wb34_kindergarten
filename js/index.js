@@ -59,3 +59,10 @@ jQuery.prototype.mousedragscrollable = function () {
     });
 };
 $("#topix ul").mousedragscrollable();
+
+
+$(function() {
+  $('#switch').on('click', function() {
+      $('#pamphlet ul').toggleClass('is-surface').toggleClass('is-reverse');
+  });
+});

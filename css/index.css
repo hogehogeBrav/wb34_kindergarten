@@ -41,22 +41,34 @@ header img{
   /* z-index: -10; */
 }
 
-
+main{
+  margin: 0 auto;
+}
+#about{
+  margin-bottom: 100px;
+}
 /* HAL幼稚園について */
 #about .container{
   height: 85vh;
+  width: 90%;
+  max-width: 1380px;
+  margin: 0 auto;
   margin-bottom: 2vh;
   /* background-color: #eaeaea; */
 }
 #about dt{
+  display: flex;
+  align-items: center;
   height: 15vh;
   position: relative;
-  padding: 15px 15px 15px 5vw;
-  margin-left: 3%; 
+  right: 17%;
+  padding: 15px 15px 15px 20px;
+  margin: 0 auto;
   background-color: #f5f5f5;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.6rem;
-  width: 60%;
+  width: 60vw;
+  max-width: 700px;
   border-radius: 10px;
 }
 #about dt::after{
@@ -76,21 +88,25 @@ header img{
   height: 40vh;
   position: absolute;
   padding: 1rem 5%;
+  left: 10%;
+  right: 0;
+  margin: auto;
   transform: translateY(-5%);
   border-radius: 10px;
   background-color: #adffad84;
-  margin-left: 15%;
   /* font-weight: bold; */
   color: rgb(80, 80, 80);
   line-height: 1.7rem;
-  font-size: 17px;
+  font-size: 16px;
   width: 80%;
+  max-width: 800px;
   z-index: -10;
 }
 #about dl img{
   object-fit: cover;
-  width: 80%;
-  margin-left: 7%;
+  width: 70%;
+  max-width: 700px;
+  margin-left: 8%;
   position: absolute;
   border-radius: 10px;
   transform: translateY(115%);
@@ -103,6 +119,7 @@ header img{
 #topix{
   margin: 0 auto 100px auto;
   width: 90%;
+  max-width: 1380px;
   height: 41vh;
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -119,6 +136,7 @@ header img{
   margin: auto;
   overflow-x: auto;
   width: 90%;
+  max-width: 1380px;
 }
 #topix ul li{
   vertical-align: top;
@@ -148,27 +166,17 @@ header img{
   margin-top: 10px;
 }
 
-/* #new_news h2{
-  text-align: center;
-  font-family: 'optima';
-  font-size: 1.5rem;
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px 0;
-  background-color: #f5f5f5;
-  border-radius: 200px;
-} */
-
-
 /* 新園舎 */
 #new_news{
-  margin: 0 auto 80px auto;
+  margin: 0 auto 100px auto;
 }
-#new_news dt{
+#new_news dt, #si dt, #special_sub dt, #services dt{
   font-size: 26px;
   font-weight: bold;
-  margin: 0 auto 25px 3%;
+  margin: 0 auto 25px auto;
   line-height: 32px;
+  max-width: 1150px;
+  padding-left: 3%;
 }
 #new_news img{
   width: 100%;
@@ -184,6 +192,7 @@ header img{
 #new_news dd{
   margin: 20px auto;
   width: 90%;
+  max-width: 960px;
   /* height: 30vh; */
   color: gray;
   /* background-color: #f5f5f5; */
@@ -192,15 +201,15 @@ header img{
   font-size: 17px;
   line-height: 1.6rem;
 }
-#new_news a, #si a{
+#new_news a, #si a , #services a{
   display: block;
   margin:  0 auto;
   color: gray;
   background-color: white;
-  border: solid 2px gray;
-  border-radius: 20px;
+  border: solid 2px rgba(128, 128, 128, 0.8);
+  border-radius: 15px;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
   width: 200px;
 }
@@ -208,13 +217,7 @@ header img{
 
 /* SI遊び */
 #si {
-  margin: 0 auto 80px auto;
-}
-#si dt{
-  font-size: 26px;
-  font-weight: bold;
-  margin: 0 auto 25px 3%;
-  line-height: 32px;
+  margin: 0 auto 100px auto;
 }
 #si img{
   width: 100%;
@@ -225,6 +228,7 @@ header img{
 #si dd{
   margin: 20px auto;
   width: 90%;
+  max-width: 960px;
   /* height: 30vh; */
   /* font-weight: bold; */
   color: gray;
@@ -238,13 +242,7 @@ header img{
 
 /* 特別講師による指導 */
 #special_sub{
-  margin: 0 auto 80px auto;
-}
-#special_sub dt{
-  font-size: 26px;
-  font-weight: bold;
-  margin: 0 auto 25px 3%;
-  line-height: 32px;
+  margin: 0 auto 100px auto;
 }
 #special_sub > img{
   width: 100%;
@@ -261,6 +259,7 @@ header img{
 #special_sub dd  {
   margin: 20px auto;
   width: 90%;
+  max-width: 960px;
   color: gray;
   border-radius: 10px;
   /* padding: 10px; */
@@ -319,13 +318,7 @@ header img{
 }
 
 #services section{
-  margin: 0 auto 80px auto;
-}
-#services dt{
-  font-size: 26px;
-  font-weight: bold;
-  margin: 0 auto 25px 3%;
-  line-height: 32px;
+  margin: 0 auto 100px auto;
 }
 #services img{
   width: 100%;
@@ -336,6 +329,7 @@ header img{
 #services dd{
   margin: 20px auto;
   width: 90%;
+  max-width: 960px;
   /* height: 30vh; */
   /* font-weight: bold; */
   color: gray;
@@ -345,18 +339,6 @@ header img{
   font-size: 17px;
   line-height: 1.6rem;
 }
-#services a{
-  display: block;
-  margin:  0 auto;
-  color: gray;
-  background-color: white;
-  border: solid 2px gray;
-  border-radius: 20px;
-  line-height: 40px;
-  font-size: 20px;
-  text-align: center;
-  width: 200px;
-}
 
 
 /* パンフレット */
@@ -365,16 +347,21 @@ header img{
   font-size: 1.2rem;
   font-weight: bold;
   width: 70%;
-  margin: 40px auto;
+  max-width: 500px;
+  margin: 100px auto 60px auto;
   padding: 15px 0;
   background-color: #f5f5f5;
   border-radius: 40px;
+}
+#pamphlet{
+  margin: 0 auto 100px auto;
 }
 #pamphlet h3{
   font-weight: bold;
   font-size: 17px;
   line-height: 22px;
   width: 90%;
+  max-width: 960px;
   margin: 0 auto;
   margin-bottom: 15px;
   color: gray;
@@ -386,33 +373,35 @@ header img{
   text-align: center;
   flex-wrap: wrap;
   margin: 40px auto;
+  padding: 0 5%;
   overflow-x: auto;
   width: 70%;
-  height: 250px;
   background-color: #f5f5f5;
   border-radius: 10px;
 }
 #pamphlet ul h4{
-  margin-bottom: 30px;
+  margin-top: 40px;
   font-size: 18px;
+  font-weight: bold;
+  color:rgb(81, 81, 81)
 }
 #pamphlet li{
   display: flex;
-  height: 180px;
-}
-#pamphlet li div{
+  flex-wrap: wrap;
   justify-content: center;
+  height: 180px;
+  width: 100%;
 }
 #switch{
   display: block;
-  margin:  0 auto;
+  margin: 0 auto 40px auto;
   color: gray;
   background-color: white;
-  border: solid 2px gray;
-  border-radius: 20px;
-  line-height: 30px;
-  font-size: 16px;
-  height: 30pxs;
+  border: solid 2px rgba(128, 128, 128, 0.8);
+  border-radius: 15px;
+  line-height: 40px;
+  font-size: 17px;
+  height: 40px;
   width: 170px;
   text-align: center;
 }
@@ -456,7 +445,60 @@ header img{
       transform 300ms 150ms;
 }
 
+footer{
+  /* height: 20vh; */
+  background-color: #f5f5f5;
+  padding: 30px;
+  /* background-image: url(../images/HAL_logo_row.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 20vh; */
+}
+footer ul{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 380px;
+  text-align: center;
+}
+footer li{
+  font-size: 16px;
+  line-height: 45px;
+  height: 45px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.8);
+  margin-bottom: 10px;
+}
+.footer_logo{
+  background-image: url(../images/HAL_logo_row.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  background-size: 240px;
+  height: 120px;
+}
+.footer_btn{
+  display: block;
+  margin: 25px auto;
+  padding: 12px 0;
+  color: gray;
+  background-color: #adffad84;
+  border: solid 1px rgba(128, 128, 128, 0.308);
+  width: 70%;
+  max-width: 400px;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer span{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height:80px;
+  margin-top: 10px;
+  color: gray;
+  background-color: #f5f5f5;
+}
 
 /* PC */
 @media screen and (min-width:960px){
+  
 }

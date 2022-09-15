@@ -64,5 +64,10 @@ $("#topix ul").mousedragscrollable();
 $(function() {
   $('#switch').on('click', function() {
       $('#pamphlet ul').toggleClass('is-surface').toggleClass('is-reverse');
+      if($('#switch').text() == 'お電話でご請求') {
+          $('#switch').text('Webでご請求');
+      } else {
+          $('#switch').text('お電話でご請求');
+      }
   });
 });

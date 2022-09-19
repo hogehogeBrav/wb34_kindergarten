@@ -18,34 +18,132 @@ body{
 header{
   width: 100%;
   height: 80px;
-  /* position: fixed; */
+  position: fixed;
   background-color: white;
+  z-index: 9999;
 }
 header img{
+  margin: auto;
   padding: 10px 0 10px 10px;
   width: 45%;
   height: 80px;
   object-fit: contain;
 }
 
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+#menu-btn-check {
+  display: none;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #3584bb;
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: #3584bb;
+  transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+}
+
 .fade_topimg{
-  height: 70vh;
+  height: 50vh;
   /* padding-top: 80px; */
   margin-bottom: 10vh;
+  z-index: -9999;
 }
 .fade_topimg img{
   /* position: fixed; */
   width: 100%;
   height: 70vh;
   object-fit: cover;
-  /* z-index: -10; */
+  z-index: -9999;
 }
 
 main{
   margin: 0 auto;
+  /* background-color: #eaeaea; */
 }
 #about{
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 /* HAL幼稚園について */
 #about .container{
@@ -85,10 +183,10 @@ main{
 #about dd{
   display: flex;
   align-items: center;
-  height: 40vh;
+  height: 43vh;
   position: absolute;
   padding: 1rem 5%;
-  left: 10%;
+  left: 13%;
   right: 0;
   margin: auto;
   transform: translateY(-5%);
@@ -106,12 +204,13 @@ main{
   object-fit: cover;
   width: 70%;
   max-width: 700px;
-  margin-left: 8%;
+  margin-left: 6%;
   position: absolute;
   border-radius: 10px;
-  transform: translateY(115%);
+  transform: translateY(125%);
   height: 30vh;
   box-shadow: 15px 15px 0px 0 #c0c0c08b;
+  z-index: -20;
 }
 
 
@@ -163,11 +262,11 @@ main{
 #topix ul li span{
   display: block;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 2vh;
 }
 
 /* 新園舎 */
-#new_news{
+#new_news, #si, #special_sub, #services section, #pamphlet{
   margin: 0 auto 100px auto;
 }
 #new_news dt, #si dt, #special_sub dt, #services dt{
@@ -178,18 +277,18 @@ main{
   max-width: 1150px;
   padding-left: 3%;
 }
-#new_news img{
+#new_news img, #si img, #services img{
   width: 100%;
   height: 30vh;
   object-fit: cover;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 #new_news dd span{
   display: block;
   font-weight: bold;
   margin-bottom: 15px;
 }
-#new_news dd{
+#new_news dd, #si dd, #services dd{
   margin: 20px auto;
   width: 90%;
   max-width: 960px;
@@ -212,38 +311,15 @@ main{
   font-size: 19px;
   text-align: center;
   width: 200px;
+  transition: 0.5s ;
 }
-
+#new_news a:hover, #si a:hover , #services a:hover{
+  background-color: #adffad84;
+}
 
 /* SI遊び */
-#si {
-  margin: 0 auto 100px auto;
-}
-#si img{
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  margin-bottom: 25px;
-}
-#si dd{
-  margin: 20px auto;
-  width: 90%;
-  max-width: 960px;
-  /* height: 30vh; */
-  /* font-weight: bold; */
-  color: gray;
-  /* background-color: #f5f5f5; */
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 17px;
-  line-height: 1.6rem;
-}
-
 
 /* 特別講師による指導 */
-#special_sub{
-  margin: 0 auto 100px auto;
-}
 #special_sub > img{
   width: 100%;
   height: 25vh;
@@ -308,7 +384,7 @@ main{
   justify-content: center;
   align-items: center;
   height: 8vh;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   padding: 10px;
 }
 #special_sub ul li span{
@@ -317,28 +393,7 @@ main{
   margin-top: 10px;
 }
 
-#services section{
-  margin: 0 auto 100px auto;
-}
-#services img{
-  width: 100%;
-  height: 25vh;
-  object-fit: cover;
-  margin-bottom: 25px;
-}
-#services dd{
-  margin: 20px auto;
-  width: 90%;
-  max-width: 960px;
-  /* height: 30vh; */
-  /* font-weight: bold; */
-  color: gray;
-  /* background-color: #f5f5f5; */
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 17px;
-  line-height: 1.6rem;
-}
+/* サービス */
 
 
 /* パンフレット */
@@ -353,14 +408,12 @@ main{
   background-color: #f5f5f5;
   border-radius: 40px;
 }
-#pamphlet{
-  margin: 0 auto 100px auto;
-}
 #pamphlet h3{
   font-weight: bold;
   font-size: 17px;
   line-height: 22px;
   width: 90%;
+  text-align: center;
   max-width: 960px;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -376,10 +429,12 @@ main{
   padding: 0 5%;
   overflow-x: auto;
   width: 70%;
+  max-width: 500px;
   background-color: #f5f5f5;
   border-radius: 10px;
 }
 #pamphlet ul h4{
+  width: 100%;
   margin-top: 40px;
   font-size: 18px;
   font-weight: bold;
@@ -400,10 +455,14 @@ main{
   border: solid 2px rgba(128, 128, 128, 0.8);
   border-radius: 15px;
   line-height: 40px;
-  font-size: 17px;
+  font-size: 18px;
   height: 40px;
   width: 170px;
   text-align: center;
+  transition: 0.5s;
+}
+#switch:hover{
+  background-color: #adffad84;
 }
 .card {
   position: relative;
@@ -496,9 +555,4 @@ footer span{
   margin-top: 10px;
   color: gray;
   background-color: #f5f5f5;
-}
-
-/* PC */
-@media screen and (min-width:960px){
-  
 }

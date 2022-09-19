@@ -6,25 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/destyle.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index_pc.css">
   <title>HAL幼稚園 | Topページ</title>
 </head>
 <body>
   <header>
     <h1 class="visuallyhidden">HAL幼稚園へようこそ</h1>
     <img src="./images/HAL_logo_row.png">
-    <nav>
-      <ul>
-        <li><a href="">HAL幼稚園について</a></li>
-        <li><a href="">HAL幼稚園の教育</a></li>
-        <li><a href="">今日の幼稚園</a></li>
-        <li><a href="">園からのお知らせ</a></li>
-      </ul>
-    </nav>
-    <a href="">資料請求はこちらから</a>
-    <!-- <div class="fade-topimg">
-      <img src="./images/12.jpg">
-      <img src="./images/14.jpg">
-    </div> -->
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <div class="menu-content">
+        <ul>
+            <li>
+              <a href="#">HAL幼稚園について</a>
+            </li>
+            <li>
+              <a href="#">HAL幼稚園の教育</a>
+            </li>
+            <li>
+              <a href="#">今日の幼稚園</a>
+            </li>
+            <li>
+              <a href="#">園からのお知らせ</a>
+            </li>
+        </ul>
+      </div>
+    </div>
   </header>
     <div class="fade_topimg">
       <img src="./images/12.jpg">
@@ -55,9 +63,9 @@
       <h2>最新のトピックス</h2>
       <ul>
         <li><a href=""><img src="/images/01.jpg"><p>入園説明会<br>~八尾プリズムホール~</p><span>2022年8月22日</span></a></li>
-        <li><a href=""><img src="/images/01.jpg"><p>親子との教室参加者募集です！</p></a></li>
-        <li><a href=""><img src="/images/01.jpg"><p>親と子の絵画教室<br>参加者募集です！</p></a></li>
-        <li><a href=""><img src="/images/01.jpg"><p>幼年消防クラブ発会式を開催しました。</p></a></li>
+        <li><a href=""><img src="/images/01.jpg"><p>親子との教室参加者募集です！</p><span>2022年8月1日</span></a></li>
+        <li><a href=""><img src="/images/01.jpg"><p>親と子の絵画教室<br>参加者募集です！</p><span>2022年7月1日</span></a></li>
+        <li><a href=""><img src="/images/01.jpg"><p>幼年消防クラブ発会式を開催しました。</p><span>2022年6月13日</span></a></li>
       </ul>
     </article>
     <article id="new_news">

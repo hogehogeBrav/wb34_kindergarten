@@ -1,0 +1,109 @@
+/* PC */
+@media screen and (min-width:960px){
+  #topix, #new_news, #si, #special_sub, #services section, #pamphlet{
+    margin: 0 auto 175px auto;
+  }
+  
+  #about .container{
+    height: 103vh;
+  }
+  #about dt{
+    right: 20%;
+    font-size: 32px;
+    line-height: 3rem;
+    padding: 15px 40px;
+    letter-spacing: 2px;
+    height: 20vh;
+  }
+  #about dd{
+    font-size: 20px;
+    line-height: 2.2rem;
+    left: 0;
+  }
+  #about dl img{
+    object-fit: cover;
+    width: 70%;
+    max-width: 700px;
+    position: absolute;
+    left: 30%;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    transform: translateY(90%);
+    height: 40vh;
+    box-shadow: 15px 15px 0px 0 #c0c0c08b;
+  }
+
+  #topix h2{
+    font-size: 30px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.73);
+  }
+  #topix ul li{
+    flex: 0 0 280px;
+  }
+  #topix ul li img{
+    height: 15vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+  }
+  #topix ul li a{
+    display: block;
+    height: 28vh;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  #new_news dt, #si dt, #special_sub dt, #services dt{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #new_news img, #si img, #services img{
+    height: 40vh;
+    /* object-fit: cover; */
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  #new_news dd, #si dd, #services dd{
+    width: 80%;
+    font-size: 20px;
+    line-height: 2.2rem;
+    margin-bottom: 50px;
+  }
+  #services dd{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+
+  #special_sub dd span{
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
+  #special_sub dd  {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 40px;
+  }
+  .special_sub_card{
+    margin-top: 60px;
+  }
+  .special_sub_card h4{
+    font-size: 22px;
+  }
+
+  #pamphlet h3{
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 22px;
+    width: 90%;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: gray;
+  }
+}

@@ -1,5 +1,19 @@
 /* PC */
 @media screen and (min-width:960px){
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #3584bb;
+    transition: all 0.5s;/*アニメーション設定*/
+  }
+  #menu-btn-check:checked ~ .menu-content {
+    left: 65%;/*メニューを画面内へ*/
+  }
+
   #topix, #new_news, #si, #special_sub, #services section, #pamphlet{
     margin: 0 auto 175px auto;
   }

@@ -1,17 +1,12 @@
 /* PC */
 @media screen and (min-width:960px){
-  .menu-content {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 100%;/*leftの値を変更してメニューを画面外へ*/
-    z-index: 80;
-    background-color: #3584bb;
-    transition: all 0.5s;/*アニメーション設定*/
-  }
   #menu-btn-check:checked ~ .menu-content {
     left: 65%;/*メニューを画面内へ*/
+  }
+  .menu-content ul li a {
+    font-size: 20px;
+    padding: 20px 15px 20px 0;
+    position: relative;
   }
 
   #topix, #new_news, #si, #special_sub, #services section, #pamphlet{
@@ -19,31 +14,33 @@
   }
   
   #about .container{
-    height: 103vh;
+    height: 85vh;
   }
   #about dt{
-    right: 20%;
-    font-size: 32px;
+    right: 18%;
+    font-size: 30px;
     line-height: 3rem;
     padding: 15px 40px;
     letter-spacing: 2px;
-    height: 20vh;
+    height: 15vh;
+    width: 70vw;
   }
   #about dd{
     font-size: 20px;
     line-height: 2.2rem;
     left: 0;
+    height: 30vh;
   }
   #about dl img{
     object-fit: cover;
-    width: 70%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 1380px;
     position: absolute;
-    left: 30%;
-    right: 0;
+    /* left: 10%; */
+    /* right: 0; */
     margin: auto;
     border-radius: 10px;
-    transform: translateY(90%);
+    transform: translateY(62%);
     height: 40vh;
     box-shadow: 15px 15px 0px 0 #c0c0c08b;
   }

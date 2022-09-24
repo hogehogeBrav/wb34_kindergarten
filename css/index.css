@@ -108,7 +108,7 @@ header img{
   top: 0;
   left: 100%;/*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
-  background-color: #3584bb;
+  background-color: #296c2d;
   transition: all 0.5s;/*アニメーション設定*/
 }
 #menu-btn-check:checked ~ .menu-content {
@@ -118,7 +118,7 @@ header img{
 .fade_topimg{
   height: 50vh;
   /* padding-top: 80px; */
-  margin-bottom: 10vh;
+  margin-bottom: 17vh;
   z-index: -9999;
 }
 .fade_topimg img{
@@ -188,7 +188,7 @@ main{
   line-height: 1.7rem;
   font-size: 16px;
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
   z-index: -10;
 }
 #about dl img{

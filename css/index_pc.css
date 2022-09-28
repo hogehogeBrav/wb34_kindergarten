@@ -1,5 +1,8 @@
 /* PC */
 @media screen and (min-width:960px){
+  header a{
+    margin: 0 auto;
+  }
   #menu-btn-check:checked ~ .menu-content {
     left: 65%;/*メニューを画面内へ*/
   }
@@ -17,7 +20,7 @@
     height: 85vh;
   }
   #about dt{
-    right: 18%;
+    right: 15%;
     font-size: 30px;
     line-height: 3rem;
     padding: 15px 40px;
@@ -116,5 +119,17 @@
     margin: 0 auto;
     margin-bottom: 50px;
     color: gray;
+  }
+
+  footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px;
+    max-width: none;
+  }
+  footer li{
+    width: 45%;
+    height: 50px;
   }
 }

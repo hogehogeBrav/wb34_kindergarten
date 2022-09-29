@@ -12,6 +12,17 @@
     position: relative;
   }
 
+  .fade_msg{
+    display: flex;
+    position: absolute;
+    top: 30vh;
+    left: 55%;
+    font-size: 38px;
+    font-weight: bold;
+    height: fit-content;
+    width: 410px;
+  }
+
   #topix, #new_news, #si, #special_sub, #services section, #pamphlet{
     margin: 0 auto 175px auto;
   }

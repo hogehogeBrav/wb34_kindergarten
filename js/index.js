@@ -1,18 +1,15 @@
 $(function(){
-  $(".fade-topimg img:not(:first-child)").hide();
-  setInterval(function() {
-    $(".fade-topimg img:first-child").fadeOut("slow").next("img").fadeIn("slow").end().appendTo(".fade-topimg");
-  },5000);
+	var setImg = '.fade_topimg';
+	var fadeSpeed = 2000;
+	var switchDelay = 5000;
+
+	$(setImg).children('img').css({opacity:'0'});
+	$(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+	setInterval(function(){
+		$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+	},switchDelay);
 });
-
-// $(window).on('scroll', function(){
-//   var scrollTop = $(window).scrollTop();
-//   var bgPosition = scrollTop / 2; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
-
-//   if(bgPosition){
-//     $('.new_news_img').css('background-position', 'center left -'+ bgPosition + 'px');
-//   }
-// });
 
 // スクロールのドラッグ有効化
 jQuery.prototype.mousedragscrollable = function () {
